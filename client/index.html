@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<title>ELET2415 - PATIENT MONITORING SYSTEM</title>
+
+
+
+<script src = "js/angular.min.js"></script>
+</head>
+
+<body class="body1" >
+    <div class="container">
+        
+        <table  ng-app ="myApp" ng-controller="myCtrl">
+
+                <tr class= "t1">
+                        <td>
+                            Alert: <td > <p ng-bind="al"> </p></td>                
+                </td>
+                    </tr>
+        
+                    <tr><td>&nbsp;</td></tr>  
+            <tr>
+                <td>
+                    Temperature: <td > <p ng-bind="name"> </p></td>                
+		</td>
+            </tr>
+
+            <tr><td>&nbsp;</td></tr>  
+
+            <tr>
+                <td>
+                    Heart Rate: &nbsp; <td><p ng-bind="heart">{{heart}} </p></td>
+                </td>
+            </tr>
+
+            <tr><td>&nbsp;</td></tr> 
+
+            <tr>
+                <td>
+                    Position: &nbsp;<td><h5 style="text-align:center;" ng-bind="orientation"></h5> </td>
+                </td>
+            </tr>
+
+            <tr><td>&nbsp;</td></tr> 
+
+        </table>
+
+
+
+        
+    </div>
+    <div class="c2">
+        <h1> USER MANUAL </h1>
+        <div class="c3">
+        <p> Position of a patient:</p>
+        <p>Patient on left side ==== LFT</p>
+        <p>Patient on right side ==== RGt</p>
+        <p>Patient on back ==== BAK</p>
+        <p>Patient face down ==== DWN</p>
+        <p>Patient sitting ==== SIT</p>
+        <p>Alert: YES  ==== EMERGENCY</p>
+        <p>Alert: NO  ==== OK </p>
+    </div>
+    <div class= "s1">
+        <h1>SOFTWARE SPECIFICATION</h1>
+        <p> The Software gives the patient heart rate, temperature and position on the bed. Also a special button is implemented to give an alert in case
+            of emergencies. The data is recorded in the database and two other files containing patient data are also provided
+            by the system.
+        </p>
+    </div>
+
+        
+    </div>
+
+    <div id="shape"></div>
+    
+</body>
+
+<script src = "js/angular.js"></script>
+
+<script type="text/javascript" src = "JS.js"></script>
+</html>
